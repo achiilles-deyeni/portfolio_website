@@ -55,9 +55,16 @@ section {
   /* color: white; */
 }
 
+#hero-section {
+  /* background-image: url("/images/Achilles.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 7%;
+}
+
 .heroimg {
   overflow: hidden;
-  max-width: 100%;
+  min-width: 100%;
   position: absolute;
   z-index: -1;
 }
