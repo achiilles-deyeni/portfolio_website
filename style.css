@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #eaeded;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -18,6 +21,8 @@ h2 {
 .logo {
   color: blue;
   text-transform: uppercase;
+  padding-left: 5%;
+  font-weight: bold;
 }
 
 button a {
@@ -28,11 +33,11 @@ button a {
   color: blue;
   padding: 2rem;
 }
-.nav-link {
+/* .links {
   float: right;
-}
+} */
 .navbar {
-  display: flex;
+  /* display: flex; */
   gap: 2rem;
   padding: 0.5rem;
 }
@@ -42,24 +47,36 @@ button a {
   justify-content: flex-end;
 }
 
+hr {
+  margin: 0;
+  color: black;
+}
+.cards {
+  transition: all 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 .navbar li a {
   text-decoration: none;
-  color: blue;
+  color: white;
 }
 
 /* styling for hero section */
 section {
   text-align: center;
-  position: relative;
-  padding: 7% 15%;
+  /* position: relative; */
+  padding: 5% 15%;
   /* color: white; */
 }
 
 #hero-section {
-  /* background-image: url("/images/Achilles.jpg"); */
+  background-image: url("/images/Achilles.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5% 7%;
+  height: 90vh;
 }
 
 .heroimg {
@@ -86,8 +103,9 @@ section {
   margin-bottom: 3px;
 }
 
-hr {
-  color: black;
+.About p {
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 /* styling for hobbies */
@@ -218,6 +236,9 @@ form input {
   color: blue;
 }
 
+.icons:hover {
+  transform: scale(1.5);
+}
 .phone {
   font-family: ubuntu, serif;
   line-height: 1.5;

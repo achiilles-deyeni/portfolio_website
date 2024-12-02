@@ -16,11 +16,11 @@
 />
   <title>Achilles Deyeni</title>
 </head>
-<body class="container">
+<body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Achilles Deyeni</a>
+      <a class="logo navbar-brand" href="#">Achilles Deyeni</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,19 +32,19 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
+              <a class="nav-link active links" aria-current="page" href="#hero-section">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
+              <a class="nav-link links" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Hobbies">Hobbies</a>
+              <a class="nav-link links " href="#Hobbies">Hobbies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Projects">Projects</a>
+              <a class="nav-link links" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Contact Me</a>
+              <a class="nav-link links" href="#cta">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -52,12 +52,12 @@
     </div>
   </nav>
   <!-- Hero section -->
-   <section class="container-fluid" id="hero-section">
-    <img class="heroimg" src="images/Achilles.jpg" alt="">
-    <h2>Achilles Deyeni</h2>
+   <section class="container-fluid justify-content-center mt-4" id="hero-section">
+    <!-- <img class="heroimg" src="images/Achilles.jpg" alt=""> -->
+    <h2><strong>Achilles Deyeni</strong></h2>
     <p>Front-end Developer, Fullstack Enthusiast, AI Enthusiast</p>
     <button class="btn btn-primary btn-lg"><a href="#cta">Get Intouch</a></button>
-    <button class="btn btn-primary btn-lg"><a href="#cta">Get My CV</a></button>
+    <button class="btn btn-primary btn-lg"><a href="">Get My CV</a></button>
    </section>
    <section id="About">
    <div class="About">
@@ -66,54 +66,55 @@
     <p>Heya! I'm Achilles Deyeni, <br>an undergrad in Computer Science and Engineering at the <br> University of Mines and Technology, Tarkwa - Ghana. <br>I aspire to be a Fullstack Developer and an AI Engineer. <br>I'm a python programmer. Wait! I'm into Robotics too.</p>
    </div>
   </section>
-  <section id="Hobbies">
-    <h2>Hobbies</h2>
-    <hr>
-  <div class="row">
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <i class="icons fa-solid fa-futbol fa-3x"></i>
-      <h4>Playing Football</h4>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <i class="icons fa-solid fa-code fa-3x"></i>
-      <h4>Coding</h4>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <i class="icons fa-solid fa-tv fa-3x"></i>
-      <h4>Watching Movies</h4>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <i class="icons fa-solid fa-headphones fa-3x"></i>
-      <h4>Listening to Music</h4>
-    </div>
-  </div>
-  </section>
   <section id="Projects">
     <h2>Projects</h2>
     <hr>
     <div class="projects row">
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6 cards">
         <i class="icons fa-solid fa-church fa-3x"></i>
         <h4>Church management system</h4>
         <p>This helpps maanagement of a church</p>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6 cards">
         <i class="icons fa-solid fa-bell-concierge fa-3x"></i>
         <h4>Hotel management system</h4>
         <p>This helpps maanagement of a church</p>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6 cards">
         <i class="icons fa-solid fa-cart-shopping fa-3x"></i>
         <h4>E-commence website</h4>
         <p>This helpps maanagement of a church</p>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6 cards">
         <i class="icons fa-solid fa-cloud fa-3x"></i>
         <h4>Weather App</h4>
         <p>This helpps maanagement of a church</p>
       </div>
    </div>
   </section>
+  <section id="Hobbies">
+    <h2>Hobbies</h2>
+    <hr>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 cards">
+      <i class="icons fa-solid fa-futbol fa-3x"></i>
+      <h4>Playing Football</h4>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 cards">
+      <i class="icons fa-solid fa-code fa-3x"></i>
+      <h4>Coding</h4>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 cards">
+      <i class="icons fa-solid fa-tv fa-3x"></i>
+      <h4>Watching Movies</h4>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 cards">
+      <i class="icons fa-solid fa-headphones fa-3x"></i>
+      <h4>Listening to Music</h4>
+    </div>
+  </div>
+  </section>
+
    <div class="certifications">
     <h3>Here are some of my certificates</h3>
     <ul>
@@ -149,14 +150,14 @@
    <section id="cta">
     <div class="container ">
       <h2 class="getintouch">Get Intouch</h2>
-      <i class="icons fab fa-whatsapp fa-2x"></i>
-      <i class="icons fas fa-envelope fa-2x"></i>
-      <i class="icons fab fa-linkedin fa-2x"></i>
+      <a href="https://wa.me/+233256603278"><i class="icons fab fa-whatsapp fa-2x"></i></a>
+      <a href="mailto:achillesmann03@gmail.com"><i class="icons fas fa-envelope fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/achilles-deyeni"><i class="icons fab fa-linkedin fa-2x"></i></a>
       <i class="icons fab fa-instagram fa-2x"></i>
       <i class="icons fab fa-twitter fa-2x"></i>
       <i class="icons fab fa-facebook fa-2x"></i>
       <i class="icons fab fa-discord fa-2x"></i>
-      <i class="icons fab fa-github fa-2x"></i>
+      <a href="https://github.com/achiilles-deyeni"><i class="icons fab fa-github fa-2x"></i></a>
     </div>
    </section>
    <footer class="bg-primary">
