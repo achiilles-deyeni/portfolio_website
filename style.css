@@ -19,7 +19,6 @@ h2 {
 }
 
 .logo {
-  color: blue;
   text-transform: uppercase;
   padding-left: 5%;
   font-weight: bold;
@@ -33,11 +32,8 @@ button a {
   color: blue;
   padding: 2rem;
 }
-/* .links {
-  float: right;
-} */
+
 .navbar {
-  /* display: flex; */
   gap: 2rem;
   padding: 0.5rem;
 }
@@ -45,14 +41,6 @@ button a {
 .navbar li {
   list-style-type: none;
   justify-content: flex-end;
-}
-
-hr {
-  margin: 0;
-  color: black;
-}
-.cards {
-  transition: all 0.3s ease;
 }
 
 .cards:hover {
@@ -67,23 +55,26 @@ hr {
 /* styling for hero section */
 section {
   text-align: center;
-  /* position: relative; */
   padding: 5% 15%;
-  /* color: white; */
+}
+.headline {
+  position: relative;
+  margin: 10px;
+  width: 480px;
+  padding: 5px;
+  left: 55rem;
+  top: 10rem;
 }
 
+.headline p {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
 #hero-section {
   background-image: url("/images/Achilles.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
-}
-
-.heroimg {
-  overflow: hidden;
-  min-width: 100%;
-  position: absolute;
-  z-index: -1;
+  height: 95vh;
 }
 
 /* styling for about */
@@ -96,6 +87,9 @@ section {
   padding: 10px;
   height: 20rem;
   width: 100%;
+  margin: auto;
+  animation: floatin 3s infinite;
+  box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .About h1 {
@@ -109,55 +103,56 @@ section {
 }
 
 /* styling for hobbies */
-.hobbies {
+#Hobbies {
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 20rem;
-  gap: 10px;
+  /* gap: 5px; */
+  justify-content: space-between;
 }
 
-.hobby-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  width: 80%;
-}
-
-.hobbies .text {
-  width: 40%;
-  /* background-color: yellow; */
-  padding: 10px;
-  height: 100%;
-}
-
-.hobbies .text li {
-  list-style-type: none;
+#Hobbies h2 {
+  position: relative;
+  text-align: left;
   text-transform: capitalize;
-  padding: 5px;
+  left: 25px;
+  padding-bottom: 7px;
 }
 
-.hobbies .hobby-images {
-  /* background-color: green; */
-  height: 100%;
-  width: 40%;
+#Hobbies ul {
+  position: relative;
+  list-style-type: none;
+  left: 40px;
 }
 
-.hobbies .hobby-images img {
-  height: 100%;
-  width: 100%;
+#Hobbies ul i {
+  padding-right: 15px;
 }
 
+.hobbies-box {
+  text-align: left;
+  padding: 5%;
+  font-size: 1.5rem;
+  border-radius: 5%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
 /* styling for certifications */
-.certifications {
+#skills {
   display: flex;
-  justify-content: center;
-  /* background-color: blanchedalmond; */
-  padding: 10px;
-  height: 20rem;
+  justify-content: space-between;
+}
+
+#skills ul li {
+  padding-right: 10px;
+}
+
+.skills-box h2 {
+  text-align: center;
+}
+.skills-box {
+  text-align: left;
+  padding: 5%;
+  font-size: 1.5rem;
+  border-radius: 5%;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* styling for gallery */
@@ -202,46 +197,31 @@ section {
   object-fit: cover;
 }
 
-.language-prof {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 7rem;
-}
-.formfield {
-  display: flex;
-  flex-direction: column;
-}
-form input {
-  width: 100%;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.innerdiv {
-  display: flex;
-}
-.inputfields {
-  width: 100%;
-
-  /* margin: 5px; */
-}
-
-.textarea {
-  width: 40%;
-}
-
 .getintouch {
-  color: blue;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  /* margin: 5% 0; */
 }
 
+.getintouch h2 {
+  text-align: left;
+  position: relative;
+  left: 5%;
+}
 .icons:hover {
   transform: scale(1.5);
 }
-.phone {
-  font-family: ubuntu, serif;
-  line-height: 1.5;
+
+@keyframes floatin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 /* styling for footer */
 footer {
