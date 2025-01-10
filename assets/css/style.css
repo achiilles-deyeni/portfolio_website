@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: aliceblue;
   line-height: 1.6;
   font-family: "Ubuntu", sans-serif;
 }
@@ -37,8 +37,7 @@ section {
   padding: var(--section-padding);
 }
 
-/* Navigation */
-.navbar {
+Navigation .navbar {
   gap: 2rem;
   padding: 0.5rem;
 }
@@ -62,7 +61,7 @@ section {
 
 /* Hero Section */
 #hero-section {
-  background: url("/images/Achilles.jpg") no-repeat center/cover;
+  background: url("/assets/images/Achilles.jpg") center/cover;
   height: 95vh;
   position: relative;
 }
@@ -97,7 +96,6 @@ section {
 
 .About h2 {
   border-bottom: 2px solid currentColor;
-  margin-bottom: 1rem;
 }
 
 .About p {
@@ -129,6 +127,7 @@ section {
   font-size: 1.5rem;
   border-radius: 8px;
   box-shadow: var(--shadow-sm);
+  animation: floatin 3s ease-in-out infinite;
 }
 
 #Hobbies h2 {
@@ -159,17 +158,12 @@ section {
   font-size: 1.5rem;
   border-radius: 8px;
   box-shadow: var(--shadow-md);
+  animation: floatin 3s ease-in-out infinite;
 }
 
 .skills-box h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-}
-
-.skills-animate {
-  background-color: var(--color-primary);
-  animation: skill-animate 2s ease-in-out alternate 1;
-  will-change: transform;
 }
 
 /* Contact Section */
@@ -239,6 +233,138 @@ footer {
   }
 }
 
+/* AI gen */
+/* Animation Variables */
+:root {
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration-slow: 1.5s;
+  --animation-duration-medium: 1s;
+  --animation-duration-fast: 0.5s;
+}
+
+/* Fade In Animation for Sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide In Animation for Cards */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Rotating Cube Animation */
+@keyframes rotate3D {
+  0% {
+    transform: perspective(1000px) rotateX(0) rotateY(0) rotateZ(0);
+  }
+  33% {
+    transform: perspective(1000px) rotateX(180deg) rotateY(0) rotateZ(0);
+  }
+  66% {
+    transform: perspective(1000px) rotateX(180deg) rotateY(180deg) rotateZ(0);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(360deg) rotateY(360deg) rotateZ(0);
+  }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Apply animations to elements */
+
+/* Hero Section Animation */
+.headline {
+  animation: fadeInUp var(--animation-duration-medium) var(--animation-timing);
+}
+
+/* About Section Floating Effect */
+.About {
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Project Cards Entrance Animation */
+.cards {
+  opacity: 0;
+  animation: slideIn var(--animation-duration-medium) var(--animation-timing)
+    forwards;
+}
+
+/* Delay each card animation */
+.cards:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.cards:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.cards:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.cards:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Skills Animation */
+.skills-animate {
+  animation: rotate3D 5s infinite linear;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.icons:hover {
+  animation: pulse var(--animation-duration-fast) ease-in-out;
+}
+
+/* Add animation triggers on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--animation-duration-medium) var(--animation-timing);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
   :root {
@@ -249,6 +375,7 @@ footer {
     width: 100%;
     top: 40%;
     padding: 0 1rem;
+    color: white;
   }
 
   .About {
