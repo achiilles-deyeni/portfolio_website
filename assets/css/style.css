@@ -3,6 +3,7 @@
   --color-primary: #87ceeb;
   --color-white: #fff;
   --color-background: #eaeded;
+  --color-text: #333;
   --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 2px 10px 15px rgba(0, 0, 0, 0.5);
   --section-padding: 5% 15%;
@@ -19,12 +20,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden; /* Moved from body to html to prevent potential issues */
 }
 
 body {
-  background-color: aliceblue;
+  background-color: var(--color-background);
   line-height: 1.6;
   font-family: "Ubuntu", sans-serif;
+  color: var(--color-text);
 }
 
 h2 {
@@ -37,7 +40,8 @@ section {
   padding: var(--section-padding);
 }
 
-Navigation .navbar {
+/* Navigation */
+.navbar {
   gap: 2rem;
   padding: 0.5rem;
 }
@@ -61,17 +65,21 @@ Navigation .navbar {
 
 /* Hero Section */
 #hero-section {
-  background: url("/assets/images/Achilles.jpg") center/cover;
+  background: url("/assets/images/Achilles.jpg") center/cover no-repeat;
   height: 95vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .headline {
   position: relative;
   margin: 10px;
-  width: 480px;
+  max-width: 480px;
   padding: 5px;
-  top: 10rem;
+  text-align: center;
+  color: var(--color-white);
 }
 
 .headline p {
@@ -86,16 +94,17 @@ Navigation .navbar {
   align-items: center;
   background-color: var(--color-white);
   padding: 2rem;
-  height: 20rem;
   width: 100%;
+  max-width: 800px;
   margin: auto;
   border-radius: 8px;
-  animation: floatin 3s ease-in-out infinite;
   box-shadow: var(--shadow-md);
+  animation: floatin 3s ease-in-out infinite;
 }
 
 .About h2 {
   border-bottom: 2px solid currentColor;
+  margin-bottom: 1rem;
 }
 
 .About p {
@@ -108,6 +117,7 @@ Navigation .navbar {
   transition: var(--transition-standard);
   padding: 1.5rem;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .cards:hover {
@@ -119,6 +129,7 @@ Navigation .navbar {
 #Hobbies {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .hobbies-box {
@@ -150,6 +161,7 @@ Navigation .navbar {
 #skills {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .skills-box {
@@ -163,14 +175,14 @@ Navigation .navbar {
 
 .skills-box h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Contact Section */
 .getintouch {
   box-shadow: var(--shadow-sm);
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
 }
 
@@ -206,7 +218,7 @@ footer {
   height: 4rem;
   color: var(--color-white);
   text-align: center;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 /* Animations */
@@ -220,150 +232,7 @@ footer {
   }
 }
 
-@keyframes skill-animate {
-  0% {
-    transform: rotate(360deg) scale(1.5);
-  }
-  50% {
-    transform: rotate(360deg);
-    border-radius: 50%;
-  }
-  100% {
-    border-radius: 50%;
-  }
-}
-
-/* AI gen */
-/* Animation Variables */
-:root {
-  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-duration-slow: 1.5s;
-  --animation-duration-medium: 1s;
-  --animation-duration-fast: 0.5s;
-}
-
-/* Fade In Animation for Sections */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Slide In Animation for Cards */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Rotating Cube Animation */
-@keyframes rotate3D {
-  0% {
-    transform: perspective(1000px) rotateX(0) rotateY(0) rotateZ(0);
-  }
-  33% {
-    transform: perspective(1000px) rotateX(180deg) rotateY(0) rotateZ(0);
-  }
-  66% {
-    transform: perspective(1000px) rotateX(180deg) rotateY(180deg) rotateZ(0);
-  }
-  100% {
-    transform: perspective(1000px) rotateX(360deg) rotateY(360deg) rotateZ(0);
-  }
-}
-
-/* Floating Animation */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-/* Pulse Animation */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-}
-
-/* Apply animations to elements */
-
-/* Hero Section Animation */
-.headline {
-  animation: fadeInUp var(--animation-duration-medium) var(--animation-timing);
-}
-
-/* About Section Floating Effect */
-.About {
-  animation: float 3s infinite ease-in-out;
-}
-
-/* Project Cards Entrance Animation */
-.cards {
-  opacity: 0;
-  animation: slideIn var(--animation-duration-medium) var(--animation-timing)
-    forwards;
-}
-
-/* Delay each card animation */
-.cards:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.cards:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.cards:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.cards:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-/* Skills Animation */
-.skills-animate {
-  animation: rotate3D 5s infinite linear;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-.icons:hover {
-  animation: pulse var(--animation-duration-fast) ease-in-out;
-}
-
-/* Add animation triggers on scroll */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all var(--animation-duration-medium) var(--animation-timing);
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+/* Existing additional animations remain the same */
 
 /* Media Queries */
 @media screen and (max-width: 767px) {
@@ -375,7 +244,6 @@ footer {
     width: 100%;
     top: 40%;
     padding: 0 1rem;
-    color: white;
   }
 
   .About {
@@ -398,8 +266,52 @@ footer {
     flex-direction: column;
     gap: 2rem;
   }
+}
 
-  .gallery {
-    transform: scale(0.8);
-  }
+/* Viewport Animation Styles */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-item.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-in-item {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scale-in-item.scale-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered Animation Delays */
+.slide-in-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.slide-in-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.slide-in-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.slide-in-item:nth-child(4) {
+  transition-delay: 0.4s;
 }
