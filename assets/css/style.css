@@ -65,7 +65,8 @@ section {
 
 /* Hero Section */
 #hero-section {
-  background: url("/assets/images/Achilles.jpg") center/cover no-repeat;
+  background-image: url("/assets/images/Achilles.jpg");
+  background-size: cover;
   height: 95vh;
   position: relative;
   display: flex;
