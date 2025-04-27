@@ -6,34 +6,33 @@
     <meta name="author" content="Achilles Deyeni" />
     <meta
       name="description"
-      content="Achilles Deyeni - Profile. I'm a Fullstack Developer. I have interest in Artificial Intelligence"
+      content="Achilles Deyeni - Portfolio & Profile. I'm a Fullstack Developer with expertise in various programming languages and frameworks. I have a growing interest in Artificial Intelligence and Robotics."
     />
     <meta
       name="keywords"
-      content="Fullstack, Front-end, Backend, Artificial, Intelligence, Achilles, Deyeni"
+      content="Fullstack, Front-end, Backend, Artificial Intelligence, Deep Learning, Achilles, Deyeni, Robotics, Python, JavaScript, Node.js, React, UMaT"
     />
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Achilles Deyeni - Profile" />
+    <meta property="og:title" content="Achilles Deyeni - Portfolio" />
     <meta
       property="og:description"
-      content="Fullstack Developer with interest in Artificial Intelligence"
+      content="Fullstack Developer with expertise in multiple programming languages and a passion for Artificial Intelligence"
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://www.achiilles-deyeni.netlify.app"
-    />
+    <meta property="og:url" content="https://www.achilles-deyeni.netlify.app" />
+    <meta property="og:image" content="/assets/images/profile-card.jpg" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Achilles Deyeni - Profile" />
+    <meta name="twitter:title" content="Achilles Deyeni - Portfolio" />
     <meta
       name="twitter:description"
-      content="Fullstack Developer with interest in Artificial Intelligence"
+      content="Fullstack Developer with expertise in multiple programming languages and a passion for Artificial Intelligence"
     />
+    <meta name="twitter:image" content="/assets/images/profile-card.jpg" />
 
-    <title>Achilles Deyeni - Profile</title>
+    <title>Achilles Deyeni - Portfolio</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/mylogo.jpg" />
@@ -56,6 +55,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -70,6 +73,28 @@
     gtag("js", new Date());
 
     gtag("config", "G-HCESDHEB0L");
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Achilles Deyeni",
+      "url": "https://www.achilles-deyeni.netlify.app",
+      "jobTitle": "Fullstack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "University of Mines and Technology"
+      },
+      "studentOf": "University of Mines and Technology",
+      "knowsAbout": [
+        "Python",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "AI Engineering",
+        "Robotics"
+      ]
+    }
   </script>
   <body>
     <!-- Navigation Bar -->
@@ -163,10 +188,14 @@
         </p>
       </div>
     </section>
-    <section id="Projects">
+    <section id="Projects" data-aos="fade-up" data-aos-duration="800">
       <h2>Some Projects</h2>
       <div class="projects row">
-        <div class="col-lg-3 col-sm-6 cards slide-in-item">
+        <div
+          class="col-lg-3 col-sm-6 cards"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
           <i class="icons fa-solid fa-church fa-3x"></i>
           <h4>Church Management System</h4>
           <p>
@@ -180,7 +209,11 @@
             >
           </button>
         </div>
-        <div class="col-lg-3 col-sm-6 cards slide-in-item">
+        <div
+          class="col-lg-3 col-sm-6 cards"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <i class="icons fa-solid fa-bell-concierge fa-3x"></i>
           <h4>easeGroupings</h4>
           <p>
@@ -199,7 +232,11 @@
             >
           </button>
         </div>
-        <div class="col-lg-3 col-sm-6 cards slide-in-item">
+        <div
+          class="col-lg-3 col-sm-6 cards"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
           <i class="icons fa-solid fa-list-check fa-3x"></i>
           <h4>To-do WebApp</h4>
           <p>
@@ -217,7 +254,11 @@
             >
           </button>
         </div>
-        <div class="col-lg-3 col-sm-6 cards slide-in-item">
+        <div
+          class="col-lg-3 col-sm-6 cards"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
           <i class="icons fa-solid fa-cloud fa-3x"></i>
           <h4>Weather App</h4>
           <p>
@@ -233,8 +274,17 @@
         </div>
       </div>
     </section>
-    <section id="Hobbies" class="row">
-      <div class="col-lg-6 hobbies-box animate-on-scroll">
+    <section
+      id="Hobbies"
+      class="row"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div
+        class="col-lg-6 hobbies-box"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         <h2>I enjoy</h2>
         <ul>
           <li><i class="fa-solid fa-code"></i>Coding</li>
@@ -244,16 +294,26 @@
           <li><i class="fa-solid fa-headphones"></i>Listening to music</li>
         </ul>
       </div>
-      <div class="col-lg-4 bg-info random animate-on-scroll">
+      <div
+        class="col-lg-4 bg-info random"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <!-- <img src="images/Achilles.jpg" alt=""> -->
       </div>
     </section>
 
-    <section id="skills" class="row">
+    <section id="skills" class="row" data-aos="fade-up" data-aos-duration="800">
       <div
-        class="col-lg-4 bg-info skills-animate animate-on-scroll scale-in-item"
+        class="col-lg-4 bg-info skills-animate"
+        data-aos="fade-right"
+        data-aos-delay="100"
       ></div>
-      <div class="col-lg-6 skills-box animate-on-scroll">
+      <div
+        class="col-lg-6 skills-box"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <h2>Skills</h2>
         <ul>
           <li class="fa-brands fa-python"></li>
@@ -289,43 +349,146 @@
       <span style="--i: 7"><img src="images/7.jpg" alt="" /></span>
       <span style="--i: 8"><img src="images/8.jpg" alt="" /></span>
     </div>
-    <section id="cta" class="animate-on-scroll">
-      <div class="getintouch">
-        <h2>Contact Me</h2>
-        <a href="https://wa.me/+233256603278"
-          ><i class="icons fab fa-whatsapp fa-2x"></i
-        ></a>
-        <a href="mailto:achillesmann03@gmail.com"
-          ><i class="icons fas fa-envelope fa-2x"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/achilles-deyeni"
-          ><i class="icons fab fa-linkedin fa-2x"></i
-        ></a>
-        <a href="https://www.instagram.com/chiloo_08?igsh=MXRxczhubmtnaWRK"
-          ><i class="icons fab fa-instagram fa-2x"></i
-        ></a>
-        <a href="https://x.com/deyeni_chiloo?t=sk9w_5jY7iwHSwNOjaNsKQ&s=09"
-          ><i class="icons fab fa-twitter fa-2x"></i
-        ></a>
-        <a href="https://www.facebook.com/Chiloo08"
-          ><i class="icons fab fa-facebook fa-2x"></i
-        ></a>
-        <a href="discordapp.com/users/1264294413052674131"
-          ><i class="icons fab fa-discord fa-2x"></i
-        ></a>
-        <a href="https://github.com/achiilles-deyeni"
-          ><i class="icons fab fa-github fa-2x"></i
-        ></a>
+    <section
+      id="cta"
+      class="py-5 bg-dark text-white"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p class="lead mb-4">
+              Let's connect! Whether you have a project in mind, job
+              opportunity, or just want to chat about technology, I'm always
+              open to new conversations and collaborations.
+            </p>
+            <div class="getintouch mb-4">
+              <a
+                href="https://wa.me/+233256603278"
+                class="mx-2"
+                target="_blank"
+                title="WhatsApp"
+              >
+                <i class="icons fab fa-whatsapp fa-2x text-success"></i>
+              </a>
+              <a
+                href="mailto:achillesmann03@gmail.com"
+                class="mx-2"
+                target="_blank"
+                title="Email"
+              >
+                <i class="icons fas fa-envelope fa-2x text-warning"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/achilles-deyeni"
+                class="mx-2"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="icons fab fa-linkedin fa-2x text-info"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/chiloo_08?igsh=MXRxczhubmtnaWRK"
+                class="mx-2"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="icons fab fa-instagram fa-2x text-danger"></i>
+              </a>
+              <a
+                href="https://x.com/deyeni_chiloo?t=sk9w_5jY7iwHSwNOjaNsKQ&s=09"
+                class="mx-2"
+                target="_blank"
+                title="Twitter"
+              >
+                <i class="icons fab fa-twitter fa-2x text-info"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/Chiloo08"
+                class="mx-2"
+                target="_blank"
+                title="Facebook"
+              >
+                <i class="icons fab fa-facebook fa-2x text-primary"></i>
+              </a>
+              <a
+                href="https://discordapp.com/users/1264294413052674131"
+                class="mx-2"
+                target="_blank"
+                title="Discord"
+              >
+                <i class="icons fab fa-discord fa-2x text-primary"></i>
+              </a>
+              <a
+                href="https://github.com/achiilles-deyeni"
+                class="mx-2"
+                target="_blank"
+                title="GitHub"
+              >
+                <i class="icons fab fa-github fa-2x text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="">
-      <p>2025 &copy Achilles Deyeni. All rights reserved</p>
+
+    <footer class="py-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy; 2025 Achilles Deyeni. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#hero-section" class="text-decoration-none text-secondary"
+              >Back to top</a
+            >
+          </div>
+        </div>
+      </div>
     </footer>
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top-button"
+      class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4"
+      title="Back to Top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="/assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Initialize AOS animation library
+      AOS.init();
+
+      // Back to Top button functionality
+      const backToTopButton = document.getElementById("back-to-top-button");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
