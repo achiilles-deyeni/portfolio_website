@@ -6,7 +6,8 @@
     <meta name="author" content="Achilles Deyeni" />
     <meta
       name="description"
-      content="Achilles Deyeni - Portfolio & Profile. I'm a Fullstack Developer with expertise in various programming languages and frameworks. I have a growing interest in Artificial Intelligence and Robotics."
+      content="Achilles Deyeni - Portfolio & Profile. I'm a Fullstack Developer with expertise in Python and JS frameworks. 
+      I have a growing interest in Artificial Intelligence and Robotics."
     />
     <meta
       name="keywords"
@@ -21,7 +22,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://achilles-deyeni.netlify.app" />
-    <meta property="og:image" content="/assets/images/profile-card.jpg" />
+    <meta property="og:image" content="/assets/images/Achilles.jpg" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -30,7 +31,7 @@
       name="twitter:description"
       content="Fullstack Developer with expertise in multiple programming languages and a passion for Artificial Intelligence"
     />
-    <meta name="twitter:image" content="/assets/images/profile-card.jpg" />
+    <meta name="twitter:image" content="/assets/images/Achilles.jpg" />
     <link rel="canonical" href="https://achilles-deyeni.netlify.app" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
@@ -126,7 +127,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end text-bg-dark"
+          class="offcanvas offcanvas-end text-bg-dark bg-info"
           tabindex="-1"
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"
@@ -165,6 +166,9 @@
               <li class="nav-item">
                 <a class="nav-link links" href="#cta">Contact Me</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#cta">Get CV</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -181,7 +185,7 @@
         <button class="btn btn-dark btn-lg">
           <a href="#cta">Get Intouch</a>
         </button>
-        <!-- <button class="btn btn-primary btn-lg"><a href="">Get My CV</a></button> -->
+        <button class="btn btn-dark btn-lg"><a href="">Get CV</a></button>
       </div>
     </section>
     <section id="About" class="animate-on-scroll fade-in">
@@ -201,104 +205,162 @@
         </p>
       </div>
     </section>
-    <section id="Projects" data-aos="fade-up" data-aos-duration="800">
-      <h2>Some Projects</h2>
-      <div class="projects row">
-        <div
-          class="col-lg-3 col-sm-6 cards"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <i class="icons fa fa-money-check-dollar fa-3x"></i>
-          <h4>Loan Default Prediction Model</h4>
-          <p>
-            Developed a machine learning model using Python to predict loan
-            defaults based on historical data. The model achieved an accuracy of
-            85%. This project involved data preprocessing, feature engineering,
-            and model evaluation using libraries such as Pandas, Scikit-learn,
-            and Matplotlib. The model can be used by financial institutions to
-            assess the risk of loan applicants and make informed lending
-            decisions.
-          </p>
-          <button class="btn project-btn btn-info">
-            <a href="http://" target="_blank" rel="noopener noreferrer"
-              >view project</a
-            >
-          </button>
+    <section
+      id="skills-projects"
+      class="row"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div
+        id="skills"
+        class="col-lg-4"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
+        <h2>Skills</h2>
+        <div class="skills-box">
+          <ul>
+            <li class="fa-solid fa-chart-line"></li>
+            Data Science
+            <br />
+            <li class="fa-solid fa-brain"></li>
+            Machine Learning
+            <br />
+            <li class="fa-solid fa-laptop-code"></li>
+            Software Development
+            <br />
+            <li class="fa-brands fa-node"></li>
+            Node.js
+            <br />
+            <li class="fa-brands fa-react"></li>
+            React
+            <br />
+            <li class="fa-solid fa-microchip"></li>
+            Embedded Systems
+            <br />
+            <li class="fa-solid fa-robot"></li>
+            Robotics
+          </ul>
         </div>
-        <div
-          class="col-lg-3 col-sm-6 cards"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <i class="icons fa-solid fa-bell-concierge fa-3x"></i>
-          <h4>easeGroupings</h4>
-          <p>
-            easeGroupings is a desktop application built using JavaFX and
-            Scenebuilder. This application takes a list of people in
-            <em>.txt</em> or <em>.xlsx</em> format and put them into groups
-            randomly based on the number of people needed to be in a group. This
-            project was built to help ease the stress of groupings in schools.
-          </p>
-          <button class="btn project-btn btn-info">
-            <a
-              href="https://github.com/achiilles-deyeni/Easegroupings.git"
-              target="_blank"
-              rel="noopener noreferrer"
-              >view project</a
-            >
-          </button>
-        </div>
-        <div
-          class="col-lg-3 col-sm-6 cards"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        >
-          <i class="icons fa-solid fa-money-bill-trend-up fa-3x"></i>
-          <h4>Stock Prediction Model</h4>
-          <p>
-            Build a stock price prediction model using Python and machine
-            learning techniques. The model utilizes historical stock data and
-            technical indicators to predict future price movements. The project
-            involves data collection, preprocessing, feature selection, and
-            model training using libraries such as Pandas, NumPy, and
-            Scikit-learn. The model can assist investors in making informed buy
-            or sell decisions based on predicted stock trends.
-          </p>
-          <button class="btn project-btn btn-info">
-            <a
-              href="https://github.com/achiilles-deyeni/task-management-system"
-              target="_blank"
-              rel="noopener noreferrer"
-              >view project</a
-            >
-          </button>
-        </div>
-        <div
-          class="col-lg-3 col-sm-6 cards"
-          data-aos="zoom-in"
-          data-aos-delay="400"
-        >
-          <i class="icons fa-solid fa-cloud fa-3x"></i>
-          <h4>Weather Prediction Model</h4>
-          <p>
-            Built a weather prediction model using Python and machine learning
-            algorithms. The model utilizes historical weather data and various
-            features such as temperature, humidity, and wind speed to make
-            accurate predictions. The project involves data collection,
-            preprocessing, feature selection, and model training using libraries
-            such as Pandas, NumPy, and Scikit-learn. The model can be used by
-            meteorologists and researchers to improve weather forecasting
-            accuracy. I used FB Prophet for this project.
-          </p>
-          <button class="btn project-btn btn-info">
-            <a href="http://" target="_blank" rel="noopener noreferrer"
-              >view project</a
-            >
-          </button>
+      </div>
+
+      <div
+        id="Projects"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        class="col-lg-6"
+      >
+        <h2>Some Projects</h2>
+        <div class="projects-box">
+          <div class="cards" data-aos="zoom-in" data-aos-delay="100">
+            <i class="icons fa fa-money-check-dollar fa-3x"></i>
+            <h4>Loan Default Prediction Model</h4>
+            <p>
+              Developed a machine learning model using Python to predict loan
+              defaults based on historical data. The model achieved an accuracy
+              of 85%. This project involved data preprocessing, feature
+              engineering, and model evaluation using libraries such as Pandas,
+              Scikit-learn, and Matplotlib. The model can be used by financial
+              institutions to assess the risk of loan applicants and make
+              informed lending decisions.
+            </p>
+            <button class="btn project-btn btn-info">
+              <a
+                href="http://github.com/achiilles-deyeni/loan_predictor"
+                target="_blank"
+                rel="noopener noreferrer"
+                >view project</a
+              >
+            </button>
+          </div>
+          <div class="cards">
+            <i class="icons fa-solid fa-bell-concierge fa-3x"></i>
+            <h4>easeGroupings</h4>
+            <p>
+              easeGroupings is a desktop application built using JavaFX and
+              Scenebuilder. This application takes a list of people in
+              <em>.txt</em> or <em>.xlsx</em> format and put them into groups
+              randomly based on the number of people needed to be in a group.
+              This project was built to help ease the stress of groupings in
+              schools.
+            </p>
+            <button class="btn project-btn btn-info">
+              <a
+                href="https://github.com/achiilles-deyeni/Easegroupings.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >view project</a
+              >
+            </button>
+          </div>
+          <div class="cards">
+            <i class="icons fa-solid fa-money-bill-trend-up fa-3x"></i>
+            <h4>Stock Prediction Model</h4>
+            <p>
+              Build a stock price prediction model using Python and machine
+              learning techniques. The model utilizes historical stock data and
+              technical indicators to predict future price movements. The
+              project involves data collection, preprocessing, feature
+              selection, and model training using libraries such as Pandas,
+              NumPy, and Scikit-learn. The model can assist investors in making
+              informed buy or sell decisions based on predicted stock trends.
+            </p>
+            <button class="btn project-btn btn-info">
+              <a
+                href="https://github.com/achiilles-deyeni/stock_prediction_model"
+                target="_blank"
+                rel="noopener noreferrer"
+                >view project</a
+              >
+            </button>
+          </div>
+          <div class="cards">
+            <i class="icons fa-solid fa-cloud fa-3x"></i>
+            <h4>Weather Prediction Model</h4>
+            <p>
+              Built a weather prediction model using Python and machine learning
+              algorithms. The model utilizes historical weather data and various
+              features such as temperature, humidity, and wind speed to make
+              accurate predictions. The project involves data collection,
+              preprocessing, feature selection, and model training using
+              libraries such as Pandas, NumPy, and Scikit-learn. The model can
+              be used by meteorologists and researchers to improve weather
+              forecasting accuracy. I used FB Prophet for this project.
+            </p>
+            <button class="btn project-btn btn-info">
+              <a
+                href="http://github/achiilles-deyeni/weather_prediction_model"
+                target="_blank"
+                rel="noopener noreferrer"
+                >view project</a
+              >
+            </button>
+          </div>
+          <div class="cards">
+            <i class="icons fa-solid fa-atom fa-3x"></i>
+            <h4>ABRATO</h4>
+            <p>
+              Built a fully functional backend for a chemical shop. This was
+              done for an academic purpose which utilized tools and frameworks
+              which include: MongoDB, Node.js and Express.js. JWT authentication
+              was used for authentication of users. Postman was used in testing
+              the routes. The project was a group project and it further
+              solidified my skills in git/github, postman, project management
+              and JWT authentication.
+            </p>
+            <button class="btn project-btn btn-info">
+              <a
+                href="http://github/achiilles-deyeni/ABRATO"
+                target="_blank"
+                rel="noopener noreferrer"
+                >view project</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </section>
+
     <section
       id="Hobbies"
       class="row"
@@ -320,50 +382,86 @@
         </ul>
       </div>
       <div
-        class="col-lg-4 bg-info random"
+        class="col-lg-4 bg-light random d-flex align-items-center justify-content-center position-relative"
         data-aos="fade-left"
         data-aos-delay="200"
+        style="min-height: 350px; height: 100%"
       >
-        <!-- <img src="images/Achilles.jpg" alt=""> -->
+        <div
+          id="hobby-carousel"
+          class="carousel slide w-100"
+          data-bs-ride="carousel"
+          data-bs-interval="4000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-img-wrapper position-relative">
+                <img
+                  src="/assets/images/1.jpg"
+                  class="d-block w-100 hobby-carousel-img"
+                  alt="Hobby 1"
+                  style="
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.4s;
+                  "
+                />
+                <div
+                  class="carousel-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  style="background: rgba(20, 20, 20, 0.6); color: #fff"
+                >
+                  <h4>Coding Outdoors</h4>
+                  <p>Enjoying code with nature's inspiration.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img-wrapper position-relative">
+                <img
+                  src="/assets/images/Achilles.jpg"
+                  class="d-block w-100 hobby-carousel-img"
+                  alt="Hobby 2"
+                  style="
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.4s;
+                  "
+                />
+                <div
+                  class="carousel-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  style="background: rgba(20, 20, 20, 0.6); color: #fff"
+                >
+                  <h4>Football Fun</h4>
+                  <p>Playing football with friends.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img-wrapper position-relative">
+                <img
+                  src="/assets/images/Achilles.jpg"
+                  class="d-block w-100 hobby-carousel-img"
+                  alt="Hobby 3"
+                  style="
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.4s;
+                  "
+                />
+                <div
+                  class="carousel-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  style="background: rgba(20, 20, 20, 0.6); color: #fff"
+                >
+                  <h4>Gaming Moments</h4>
+                  <p>Relaxing with video games.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="skills" class="row" data-aos="fade-up" data-aos-duration="800">
-      <div
-        class="col-lg-4 bg-info skills-animate"
-        data-aos="fade-right"
-        data-aos-delay="100"
-      ></div>
-      <div
-        class="col-lg-6 skills-box"
-        data-aos="fade-left"
-        data-aos-delay="200"
-      >
-        <h2>Skills</h2>
-        <ul>
-          <li class="fa-brands fa-python"></li>
-          Python
-          <br />
-          <li class="fa-brands fa-java"></li>
-          Java
-          <br />
-          <li class="fa-brands fa-js"></li>
-          Javascript
-          <br />
-          <li class="fa-brands fa-node"></li>
-          Node.js
-          <br />
-          <li class="fa-brands fa-react"></li>
-          React
-          <br />
-          <li class="fa-brands fa-node"></li>
-          Express
-          <br />
-          <li class="fa-solid fa-robot"></li>
-          Robotics
-        </ul>
-      </div>
-    </section>
     <div class="gallery" hidden>
       <span style="--i: 1"><img src="/assets/images/1.jpg" alt="" /></span>
       <span style="--i: 2"><img src="/assets/images/2.jpeg" alt="" /></span>
@@ -399,7 +497,7 @@
                 <i class="icons fab fa-whatsapp fa-2x text-success"></i>
               </a>
               <a
-                href="mailto:achillesmann03@gmail.com"
+                href="mailto:deyeniachilles6@gmail.com"
                 class="mx-2"
                 target="_blank"
                 title="Email"
@@ -460,7 +558,7 @@
       </div>
     </section>
 
-    <footer class="py-4 bg-light">
+    <footer class="py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
@@ -469,9 +567,10 @@
             </p>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <a href="#hero-section" class="text-decoration-none text-secondary"
-              >Back to top</a
-            >
+            <a
+              href="#hero-section"
+              class="text-decoration-none text-secondary"
+            ></a>
           </div>
         </div>
       </div>
